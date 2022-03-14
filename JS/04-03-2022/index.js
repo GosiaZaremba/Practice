@@ -1,70 +1,29 @@
 
-// zadanie 1
-//---------------
+function wylosujLiczbe() {
+    // copy/paste from: https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    let min = Math.ceil(1);
+    let max = Math.floor(100);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
-// function fn() {
-//     console.log('Wykonana!');
-// };
+function sprawdzCzyWygralas(liczba, funkcjaPoWygraniu) {
 
-// function invoke(param) {
-//     param();
-// };
+    console.log("Wylosowałaś liczbę: " + liczba);
 
-// invoke(fn);
+    if ((liczba % 3) === 0) {
+        funkcjaPoWygraniu();
+    } else {
+        console.log("Przykro mi. Próbuj dalej :-)");
+    }
 
-// Zadanie 2
-//-------------------------------------
+}
 
-// function fn() {
-//     console.log('Wyokonana!')
-// }
+var pokazBaner = function () {
+    console.log("=================");
+    console.log("* YOU WON BABY! *");
+    console.log("=================");
+}
 
-// function invoke(param1,) {
-//     param1()
-// }
+var wylosowanaLiczba = wylosujLiczbe();
 
-// function invMultTim(param1, param2) {
-//     for (let i = 0; i < param2; i++) {
-//         param1()
-//     }
-// }
-// invMultTim(fn, 5);
-
-// Zadanie 3
-// --------------------
-
-// function greeter() {
-//     function innerGreeter() {
-//         console.log('Hello!')
-//     }
-//     return innerGreeter
-// };
-
-// const myGreet = greeter();
-// myGreet();
-
-// Zadanie 4 - uzupełnić!!!!!!!!
-// -------------------------
-
-
-
-// function CustomGreeter(param) {
-//     function innerGreeter() {
-//         console.log('Hello!')
-//     }
-//     return innerGreeter
-// };
-
-
-// const myGreeter = CustomGreeter(innerGreeter, 'Zofia');
-
-// Zadanie 5
-// ----------------------
-
-
-
-
-
-
-
-
+sprawdzCzyWygralas(wylosowanaLiczba, pokazBaner);
