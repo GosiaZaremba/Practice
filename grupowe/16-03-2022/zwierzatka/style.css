@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.black{
+    width: 900px;
+    height:900px ; 
+    border: 2px solid black;   
+}
+
+.red {
+    font-size: 30px;
+    width: 800px;
+    height: 200px;
+    border: 2px solid red;
+    margin: 10px;
+ 
+}
+
+
+
+
+
+.orange {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 800px;
+    height: 600px;
+    border: 2px solid orange;
+    padding: 10px;
+    
+}
+
+
+
+
+.an {
+    font-size: 50px;
+    display: inline-block;
+    width: 380px;
+    height: 250px;
+    border: 2px solid darkblue;
+    background-color: lightblue;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="black">
+        <div class="red">
+            <p>Your favorite animal is:</p>
+        </div>
+        <div class="orange">
+            <div class="an ani1">🐌</div>
+            <div class="an ani2">🙈</div>
+            <div class="an ani3">🐩</div>
+            <div class="an ani4">🦝</div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const divRed = document.querySelector('.red');
+        const snail = document.querySelector('.ani1');
+        const monkey = document.querySelector('.ani2');
+        const poodle = document.querySelector('.ani3');
+        const racoon = document.querySelector('.ani4');
+
+        function functionSnail() {
+            let val = snail.textContent;
+            divRed.textContent = "Your favorite animal: " + val;
+        }
+        function functionMonkey() {
+            let val = monkey.textContent;
+            divRed.textContent = "Your favorite animal: " + val;
+        }
+        function functionPoodle() {
+            let val = poodle.textContent;
+            divRed.textContent = "Your favorite animal: " + val;
+        }
+        function functionRacoon() {
+            let val = racoon.textContent;
+            divRed.textContent = "Your favorite animal: " + val;
+        }
+
+        snail.addEventListener("click", functionSnail);
+        monkey.addEventListener("click", functionMonkey);
+        poodle.addEventListener("click", functionPoodle);
+        racoon.addEventListener("click", functionRacoon);
+
+    </script>
+</body>
+
+</html>

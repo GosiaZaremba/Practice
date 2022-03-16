@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            font-size: 50px;
+        }
+    </style>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const div = document.querySelector("div");
+            const button1 = document.querySelector("#button1");
+            const button2 = document.querySelector("#button2");
+
+            function counterPlus() {
+                currentValue += 1;
+                return currentValue;
+            };
+
+            function counterMinus() {
+                currentValue -= 1;
+                return currentValue;
+                div.
+            };
+
+
+            button1.addEventListener('click', counterPlus);
+
+            button2.addEventListener('click', counterMinus);
+
+        })
+    </script>
+</head>
+
+<body>
+    <div>0</div>
+
+    <button id="button1">+</button>
+    <button id="button2">-</button>
+
+
+
+</body>
+
+</html>
