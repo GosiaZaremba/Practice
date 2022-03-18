@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 900px;
+    height: 800px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.street{
+    position: relative;
+    width: 500px;
+    height: 780px;    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+
+.car {
+    width: 50px;
+    height: 75px;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    bottom:190px;
+    left: 220px;
+}
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    bottom: 100px;
+    left: 220px;
+}
+
+.bigDiv {
+    width: 70px;
+    height: 400px;
+}
