@@ -1,0 +1,13 @@
+div {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.red {
+    background-color: red;
+}
+.big{
+    width: 400px;
+    height: 400px;;
+}

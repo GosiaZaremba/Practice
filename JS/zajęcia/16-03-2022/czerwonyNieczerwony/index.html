@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const div = document.querySelector("div");
+            const button1 = document.querySelector("#button1");
+            const button2 = document.querySelector("#button2");
+            const button3 = document.querySelector("#button3");
+            const button4 = document.querySelector("#button4");
+
+            function handler(event) {
+                div.classList.add('red');
+            }
+
+            function handler1(event) {
+                div.classList.remove('red');
+            };
+
+            function handler2(event) {
+                div.classList.toggle('red');
+            };
+
+            function handler3(event) {
+                div.classList.add('big');
+            };
+
+            function handler4(event) {
+                div.classList.remove('big');
+            };
+
+            function handlerWon(event) {
+                button1.removeEventListener('click', handler);
+
+                button2.removeEventListener('click', handler1);
+
+                button3.removeEventListener('click', handler2);
+
+                div.removeEventListener('mouseenter', handler3);
+
+                div.removeEventListener('mouseleave', handler4);
+
+                button4.removeEventListener('click', handlerWon);
+            };
+
+
+
+            button1.addEventListener('click', handler);
+
+            button2.addEventListener('click', handler1);
+
+            button3.addEventListener('click', handler2);
+
+            div.addEventListener('mouseenter', handler3);
+
+            div.addEventListener('mouseleave', handler4);
+
+            button4.addEventListener('click', handlerWon);
+        })
+
+    </script>
+</head>
+
+<body>
+    <div></div>
+
+    <button id="button1">czerwony</button>
+    <button id="button2">nieczerwony</button>
+    <button id="button3">raz czerwony raz nieczerwony</button>
+    <button id="button4">wyłącz wpizdu</button>
+
+
+
+</body>
+
+</html>

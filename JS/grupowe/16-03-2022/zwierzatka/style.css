@@ -6,14 +6,14 @@
 .black{
     width: 900px;
     height:900px ; 
-    border: 2px solid black;   
+    background-color: bisque;   
 }
 
 .red {
     font-size: 30px;
     width: 800px;
     height: 200px;
-    border: 2px solid red;
+    background-color: red;
     margin: 10px;
  
 }
@@ -27,8 +27,8 @@
     grid-template-columns: 50% 50%;
     width: 800px;
     height: 600px;
-    border: 2px solid orange;
     padding: 10px;
+    background-color: orange;
     
 }
 

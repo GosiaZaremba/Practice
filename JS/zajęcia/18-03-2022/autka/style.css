@@ -11,6 +11,7 @@
     margin-right: auto;
 }
 .street{
+    overflow: hidden;
     position: relative;
     width: 500px;
     height: 780px;    
@@ -18,7 +19,6 @@
     margin-right: auto;
     background-color: gray;
 }
-
 
 .car {
     width: 50px;
@@ -28,7 +28,7 @@
 .red {
     background-color: red;
     position: absolute;
-    bottom:190px;
+   bottom:190px;
     left: 220px;
 }
 
