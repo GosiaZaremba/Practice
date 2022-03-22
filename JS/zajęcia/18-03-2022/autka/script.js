@@ -3,15 +3,16 @@
 let cars = document.querySelectorAll('.car');
 let red = document.querySelector('.red');
 let blue = document.querySelector('.blue');
-let baton = document.querySelector('button')
+let baton = document.querySelector('button');
+let baton2 = document.querySelector('.detach')
 let moveBy = 5;
 
-window.addEventListener('load', () => {
+const start = () => {
     red.style.bottom = '190px';
     red.style.left = '220px';
     blue.style.bottom = '100px';
     blue.style.left = '220px'
-})
+}
 
 
 const nonBtn = event => {
@@ -33,12 +34,9 @@ const nonBtn = event => {
     }
 };
 
-window.addEventListener('keydown', nonBtn);
 
 
-
-baton.addEventListener('click', () => {
-
+const withBtn = () => {
     red.style.bottom = '190px';
     red.style.left = '220px';
 
@@ -63,4 +61,17 @@ baton.addEventListener('click', () => {
             blue.style.left = parseInt(blue.style.left) + moveBy + 'px';
         }
     })
-})
+}
+
+
+const reset = () => {
+    start();
+    baton.removeEventListener('click', withBtn);
+};
+
+
+
+window.addEventListener('load', start)
+window.addEventListener('keydown', nonBtn);
+baton.addEventListener('click', withBtn);
+baton2.addEventListener('click', reset);

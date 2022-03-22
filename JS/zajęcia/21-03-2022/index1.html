@@ -23,12 +23,22 @@
         button.addEventListener("click", () => {
             console.log('Loading...');
 
-            navigator.mediaDevices.getUserMedia({ audio: true })
-                .then(stream => { console.log(stream) })
+            console.log("Przygotuj promisa", new Date());
+
+            const promise = navigator.mediaDevices.getUserMedia({ audio: true });
+
+            promise.then(stream => { console.log(stream); })
                 .catch(error => { console.log(error) })
-                .finally(() => { napis.textContent = "Jakiś napis" });
+                .finally(() => {
+                    console.log("Koncze zycie promisa", new Date());
+                    napis.textContent = "Jakiś napis"
+                });
+
+            console.log("Wyszedlem z funkcji", new Date());
 
         })
+
+
 
     </script>
 
