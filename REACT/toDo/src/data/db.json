@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "Wynieść śmieci",
+      "isCompleted": true
+    },
+    {
+      "name": "gfeagrea",
+      "isCompleted": true,
+      "id": 2
+    },
+    {
+      "name": "gyig;",
+      "isCompleted": false,
+      "id": 3
+    }
+  ]
+}
