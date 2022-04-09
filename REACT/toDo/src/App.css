@@ -1,42 +1,67 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.todoList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+}
+
+.todoName {
+  font-size: 24px;
+  width: 250px;
+  height: 50px;
+  margin-bottom: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.check {
+  height: 20px;
+  width: 20px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.delTodo {
+  height: 25px;
+  width: 25px;
+  margin: auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addInput {
+  width: 20%;
+  height: 35px;
+}
+
+.addButton {
+width: 10%;
+height: 25px;
+
+}
+
+.addTodo {
+  margin: 15px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
 }

@@ -21,9 +21,9 @@ export const AddTodo = ({ todos, setTodos }) => {
 
 
   return (
-    <>
-      <input type="text" name="" id="" ref={input} />
-      <button onClick={addTodos}>Dodaj todo</button>
-    </>
+    <div className="addTodo">
+      <input type="text" name="" id="" ref={input} className="addInput" />
+      <button onClick={addTodos} className="addButton">Dodaj todo</button>
+    </div>
   );
 };

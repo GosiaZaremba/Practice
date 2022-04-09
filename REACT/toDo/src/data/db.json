@@ -1,19 +1,19 @@
 {
   "todos": [
     {
-      "id": 1,
-      "name": "Wynieść śmieci",
-      "isCompleted": true
-    },
-    {
-      "name": "gfeagrea",
-      "isCompleted": true,
-      "id": 2
-    },
-    {
-      "name": "gyig;",
+      "name": "wyprowadzić psa",
       "isCompleted": false,
       "id": 3
+    },
+    {
+      "name": "umyć naczynia",
+      "isCompleted": false,
+      "id": 4
+    },
+    {
+      "name": "wynieść śmieci",
+      "isCompleted": false,
+      "id": 5
     }
   ]
 }

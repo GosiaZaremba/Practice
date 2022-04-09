@@ -4,6 +4,7 @@ import { AddTodo } from "./components/AddTodo";
 import { Todolist } from "./components/Todolist";
 
 
+
 function App() {
   const [todos, setTodos] = useState([]);
 
@@ -18,10 +19,13 @@ function App() {
       .catch(e => console.log(e));
   }, []);
 
+
+
   return (
     <div className="App">
       <AddTodo todos={todos} setTodos={setTodos} />
       <Todolist todos={todos} />
+      
     </div>
   );
 }
