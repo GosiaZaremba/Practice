@@ -1,67 +1,64 @@
 html {
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .App {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.todoList{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  list-style-type: none;
+.todoList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
 }
 
 .listItem {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .todoName {
-  font-size: 24px;
-  width: 250px;
-  height: 50px;
-  margin-bottom: auto;
-  text-align: center;
+    font-size: 24px;
+    width: 250px;
+    height: 50px;
+    margin-bottom: auto;
+    text-align: center;
 }
 
 .check {
-  height: 20px;
-  width: 20px;
-  margin: auto;
+    height: 20px;
+    width: 20px;
+    margin: auto;
 }
 
 .delTodo {
-  height: 25px;
-  width: 25px;
-  margin: auto;
-
+    height: 25px;
+    width: 25px;
+    margin: auto;
 }
 
 .addInput {
-  width: 20%;
-  height: 35px;
+    width: 20%;
+    height: 35px;
 }
 
 .addButton {
-width: 10%;
-height: 25px;
-
+    width: 10%;
+    height: 25px;
 }
 
 .addTodo {
-  margin: 15px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

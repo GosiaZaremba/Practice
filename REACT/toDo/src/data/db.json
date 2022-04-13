@@ -1,19 +1,14 @@
 {
   "todos": [
     {
-      "name": "wyprowadzić psa",
+      "name": "wyjść z psem",
+      "isCompleted": false,
+      "id": 2
+    },
+    {
+      "name": "pozmywać naczynia",
       "isCompleted": false,
       "id": 3
-    },
-    {
-      "name": "umyć naczynia",
-      "isCompleted": false,
-      "id": 4
-    },
-    {
-      "name": "wynieść śmieci",
-      "isCompleted": false,
-      "id": 5
     }
   ]
 }
