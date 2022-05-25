@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, Button, TextInput } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  TextInput,
+  ScrollView,
+} from "react-native";
 import { useState } from "react";
 
 export default function App() {
@@ -23,14 +30,16 @@ export default function App() {
           placeholder="Your course goal!"
           onChangeText={goalInputHandler}
         />
-        <Button color={"#564882"} title="Add goal" onPress={addGoalHandler} />
+        <Button color={"#74A667"} title="Add goal" onPress={addGoalHandler} />
       </View>
       <View style={styles.goalsContainer}>
-        {courseGoals.map((goal) => (
-          <Text style={styles.goalItem} key={goal}>
-            {goal}
-          </Text>
-        ))}
+        <ScrollView>
+          {courseGoals.map((goal) => (
+            <View style={styles.goalItem} key={goal}>
+              <Text style={styles.goalText}>{goal}</Text>
+            </View>
+          ))}
+        </ScrollView>
       </View>
     </View>
   );
@@ -41,7 +50,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 50,
     paddingHorizontal: 16,
-    backgroundColor: "#537F96",
+    backgroundColor: "#D1DED5",
   },
   inputContainer: {
     flex: 1,
@@ -50,15 +59,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 24,
     borderBottomWidth: 1,
-    borderBottomColor: "#564882",
+    borderBottomColor: "#74A667",
   },
   textInput: {
     borderWidth: 1,
     borderRadius: 6,
-    borderColor: "#564882",
+    borderColor: "#74A667",
     width: "70%",
     marginRight: 8,
     padding: 8,
+    backgroundColor: "#E1F0E6",
   },
   goalsContainer: {
     flex: 5,
@@ -66,9 +76,11 @@ const styles = StyleSheet.create({
   goalItem: {
     margin: 8,
     padding: 8,
-    fontSize: 16,
-    backgroundColor: "#564882",
+    backgroundColor: "#74A667",
     borderRadius: 6,
+  },
+  goalText: {
+    fontSize: 16,
     textAlign: "center",
   },
 });
