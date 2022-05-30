@@ -6,7 +6,7 @@ export const GoalItem = ({ text, deleteGoal, id }) => {
       <Pressable
         android_ripple={{ color: "#A66798" }}
         onPress={deleteGoal.bind(this, id)}
-        style={({ pressed }) => pressed && styles.pressedItem}
+        style={({ pressed }) => pressed && styles.pressedItem} //for iOS
       >
         <Text style={styles.goalText}>{text}</Text>
       </Pressable>
@@ -17,7 +17,7 @@ export const GoalItem = ({ text, deleteGoal, id }) => {
 const styles = StyleSheet.create({
   goalItem: {
     margin: 8,
-    backgroundColor: "#74A667",
+    backgroundColor: "#9C6EFF",
     borderRadius: 6,
   },
   goalText: {
