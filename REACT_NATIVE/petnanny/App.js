@@ -6,9 +6,10 @@
  * @flow strict-local
  */
 
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Text, View} from 'react-native';
 import firestore from '@react-native-firebase/firestore';
+import {AddPet} from './screens/AddPet';
 
 const App = () => {
   const user = async () => {
@@ -22,7 +23,7 @@ const App = () => {
 
   return (
     <View>
-      <Text>FirebaseApp</Text>
+      <AddPet></AddPet>
     </View>
   );
 };
