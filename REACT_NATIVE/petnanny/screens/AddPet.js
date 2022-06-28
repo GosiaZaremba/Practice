@@ -1,12 +1,13 @@
 import React from 'react';
 import {useState} from 'react';
-import {Alert, StyleSheet, TextInput, View} from 'react-native';
+import {StyleSheet, TextInput, View} from 'react-native';
 import {Button} from '../components/Button';
 import {AppImagePicker} from '../components/AppImagePicker';
 import {Logo} from '../components/Logo';
 import {Title} from '../components/Title';
 import {Colors} from '../constants/colors';
 import {launchImageLibrary} from 'react-native-image-picker';
+import ImagePicker from 'react-native-image-crop-picker';
 
 export const AddPet = () => {
   const [form, setForm] = useState({
@@ -34,15 +35,26 @@ export const AddPet = () => {
   };
   const [pickedImage, setPickedImage] = useState();
 
-  const getImage = async () => {
-    const image = await launchImageLibrary({
-      mediaType: 'photo',
-      quality: 0.5,
-      maxWidth: 150,
-      maxHeight: 150,
+  const getImage = () => {
+    ImagePicker.openPicker({
+      width: 150,
+      height: 150,
+      cropping: true,
+    }).then(image => {
+      setPickedImage(image.path);
+      console.log(image.path);
     });
-    setPickedImage(image.uri);
   };
+
+  // const getImage = async () => {
+  //   const image = await launchImageLibrary({
+  //     mediaType: 'photo',
+  //     maxWidth: 1000,
+  //     maxHeight: 1000,
+  //   });
+  //   setPickedImage(image.assets[0].uri);
+  //   console.log(image.assets[0].uri);
+  // };
 
   return (
     <View style={styles.mainContainer}>
