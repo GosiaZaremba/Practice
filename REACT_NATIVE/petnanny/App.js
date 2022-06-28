@@ -11,18 +11,14 @@ import {Text, View} from 'react-native';
 import firestore from '@react-native-firebase/firestore';
 
 const App = () => {
-  const [userDocument, setUserDocument] = useState({});
-  const getUser = async () => {
-    const userDocuments = await firestore()
-      .collection('users')
+  const user = async () => {
+    const userDocs = await firestore()
+      .collection('Users')
       .doc('TUr8hAdC51oxS8qZGTdi')
       .get();
-    setUserDocument(userDocuments);
-    console.log(userDocument);
+    console.log(userDocs);
   };
-  useEffect(() => {
-    getUser();
-  }, []);
+  user();
 
   return (
     <View>
