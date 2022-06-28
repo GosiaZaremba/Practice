@@ -6,8 +6,9 @@ import {AppImagePicker} from '../components/AppImagePicker';
 import {Logo} from '../components/Logo';
 import {Title} from '../components/Title';
 import {Colors} from '../constants/colors';
-import {launchImageLibrary} from 'react-native-image-picker';
 import ImagePicker from 'react-native-image-crop-picker';
+import firestore from '@react-native-firebase/firestore';
+import uuid from 'react-native-uuid';
 
 export const AddPet = () => {
   const [form, setForm] = useState({
@@ -17,6 +18,8 @@ export const AddPet = () => {
     description: '',
   });
 
+  const petId = uuid.v4();
+
   const onChangeHandler = (name, value) => {
     setForm({
       ...form,
@@ -25,6 +28,13 @@ export const AddPet = () => {
   };
 
   const onPressHandler = () => {
+    firestore()
+      .collection('pets')
+      .doc(petId)
+      .set(form)
+      .then(() => {
+        console.log('Data added!');
+      });
     console.log(form);
     setForm({
       name: '',

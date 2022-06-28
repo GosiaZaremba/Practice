@@ -16,7 +16,9 @@
     "react-native": "0.69.0",
     "react-native-image-crop-picker": "^0.37.3",
     "react-native-image-picker": "^4.8.4",
-    "react-native-linear-gradient": "^2.5.6"
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-uuid": "^2.0.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
