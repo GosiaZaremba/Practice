@@ -25,13 +25,19 @@
   --borderMainColor: #ebeaed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-size-1: 0.875em;
+  --font-size-2: 1em;
+  --font-size-3: 1.125em;
+  --font-size-4: 1.375em;
+  --font-size-5: 2.25em;
+  --font-size-6: 3.25em;
+  --font-size-7: 4.75em;
 }
 
 body {
   margin: 0;
-  padding: 48px 0;
-  margin: auto;
   font-family: var(--primaryFont);
+  font-size: 16px;
 }
 
 div.container {
@@ -42,19 +48,19 @@ div.container {
 }
 
 div.inner-container {
-  width: 1170px;
+  width: 100%;
+  padding: 3em 8.5em;
 }
 
 button.primary-color {
   background-color: var(--mainColor);
   border-radius: 10px;
   border: none;
-  line-height: 28px;
 
   font-family: var(--primaryFont);
 
   color: var(--buttonFontColor);
-  font-size: 18px;
+  font-size: var(--font-size-3);
 }
 
 button.secondary-color {
@@ -72,7 +78,7 @@ i:hover {
 }
 
 .content {
-  margin-top: 70px;
+  margin-top: 5em;
 }
 
 ul {
@@ -86,6 +92,10 @@ a {
 }
 
 /* Navigation */
+header {
+  width: 100%;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -94,21 +104,20 @@ nav {
 ul.menu {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 
-  min-width: 30%;
-  margin-right: 250px;
+  width: 30%;
+  margin-right: auto;
 }
 
-nav div:first-child {
-  margin-right: 114px;
+nav img {
+  margin-right: 9.5%;
 }
 
 ul.menu li a,
 nav div:last-child a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: var(--font-size-3);
   color: var(--secondaryFontColor);
 }
 
@@ -122,7 +131,7 @@ nav div:last-child a:active {
 nav div:last-child {
   display: flex;
   justify-content: space-between;
-  min-width: 17%;
+  min-width: 12em;
 }
 
 nav div:last-child p {
@@ -152,20 +161,20 @@ nav div:last-child button {
   font-family: var(--primaryFontXBold);
   margin: 0;
   color: var(--primaryFontColor);
-  font-size: 70px;
-  line-height: 81px;
+  font-size: var(--font-size-7);
+  line-height: 1.065em;
   font-weight: 850;
 }
 
 .banner div p {
   color: var(--secondaryFontColor);
-  font-size: 22px;
-  line-height: 28px;
+  font-size: var(--font-size-4);
+  line-height: 1.27em;
 }
 
 button[name="getstarted"] {
-  width: 162px;
-  height: 49px;
+  width: 9em;
+  height: 2.72em;
 }
 
 /* Section Headers */
@@ -173,13 +182,14 @@ button[name="getstarted"] {
 div.section-header {
   font-weight: 700;
   text-align: center;
-  margin: 120px 0 0 0;
+
+  margin-top: 7.5em;
 }
 
 .section-header h2 {
-  font-size: 14px;
+  font-size: var(--font-size-1);
   color: var(--lightFontColor);
-  line-height: 28px;
+  line-height: 2em;
   letter-spacing: 0.45em;
   text-transform: uppercase;
 
@@ -187,9 +197,10 @@ div.section-header {
 }
 
 .section-header h3 {
-  margin: 0;
-  font-size: 52px;
+  font-size: var(--font-size-6);
   color: var(--primaryFontColor);
+
+  margin: 0;
 }
 
 /* Services */
@@ -198,7 +209,7 @@ div.section-header {
   display: flex;
   justify-content: space-between;
 
-  margin-top: 110px;
+  margin-top: 7em;
 }
 
 .service {
@@ -207,8 +218,6 @@ div.section-header {
   justify-content: space-between;
   align-items: center;
 
-  width: 352px;
-  height: 508px;
   border-radius: 28px;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
     0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
@@ -216,8 +225,8 @@ div.section-header {
     0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
     0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
     0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
-  padding: 45px 40px;
-  margin-right: 57px;
+  padding: 2em 3.5em;
+  margin-right: 3em;
 }
 
 .services div:last-child {
@@ -230,14 +239,14 @@ div.section-header {
 
 .service h2 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--font-size-5);
   line-height: 28px;
   text-align: center;
 }
 
 .service p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size-3);
   line-height: 28px;
   text-align: center;
 }
@@ -257,7 +266,7 @@ div.section-header {
   height: 48px;
   margin-top: 120px;
 
-  font-size: 16px;
+  font-size: var(--font-size-2);
   line-height: 22px;
 }
 
@@ -270,7 +279,7 @@ div.section-header {
 .services-video div:first-child p:first-child {
   color: var(--accentFontColor);
   font-weight: 500;
-  font-size: 22px;
+  font-size: var(--font-size-4);
   line-height: 32px;
 
   padding-right: 130px;
@@ -280,7 +289,7 @@ div.section-header {
 .services-video div:first-child p:nth-child(2) {
   color: var(--transparentFontColor);
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-2);
   line-height: 26px;
 
   margin: 20px 0 0 0;
@@ -332,7 +341,7 @@ div.section-header {
 .opinion-content {
   font-family: var(--secondaryFont);
   font-weight: 500;
-  font-size: 18px;
+  font-size: var(--font-size-3);
   line-height: 28px;
   color: var(--secondaryFontColor);
 
@@ -343,7 +352,7 @@ div.section-header {
 
 .customer-name {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--font-size-1);
   line-height: 26px;
   text-transform: uppercase;
 
@@ -405,7 +414,7 @@ div.section-header {
   align-items: center;
 
   color: var(--transparentFontColor);
-  font-size: 22px;
+  font-size: var(--font-size-4);
 
   border-top: 2px solid var(--borderMainColor);
   border-right: 2px solid var(--borderMainColor);
@@ -421,7 +430,7 @@ div.section-header {
 
 .teammate-name {
   font-family: var(--secondaryFont);
-  font-size: 22px;
+  font-size: var(--font-size-4);
   line-height: 32px;
   color: var(--accentFontColor);
   margin: 0 0 16px 0;
@@ -429,7 +438,7 @@ div.section-header {
 
 .teammate-position {
   font-family: var(--secondaryFont);
-  font-size: 14px;
+  font-size: var(--font-size-1);
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 2px;
@@ -469,7 +478,7 @@ footer ul li {
 
 footer div p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-2);
   line-height: 26px;
   color: var(--accentFontColor);
 
@@ -479,7 +488,7 @@ footer div p {
 footer > p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-2);
   line-height: 26px;
   color: var(--transparentFontColor);
   margin-top: 40px;
