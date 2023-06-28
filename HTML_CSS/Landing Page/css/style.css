@@ -3,18 +3,12 @@
   src: url("../fonts/Ageo/ageopersonaluse-medium.woff");
 }
 
-@font-face {
-  font-family: Ageo-XBold;
-  src: url("../fonts/Ageo/ageopersonaluse-extrabold.woff");
-}
-
 @import url("https://fonts.googleapis.com/css2?family=DMSans:wght@400;500;700&display=swap");
 
 :root {
   --mainColor: #ff6600;
   --secondaryColor: #ffffff;
   --primaryFont: "Ageo", sans-serif;
-  --primaryFontXBold: "Ageo-XBold", sans-serif;
   --secondaryFont: "DM Sans", sans-serif;
   --primaryFontColor: #0b1b35;
   --secondaryFontColor: #000000;
@@ -23,8 +17,6 @@
   --transparentFontColor: #15143966;
   --buttonFontColor: #ffffff;
   --borderMainColor: #ebeaed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   --font-size-1: 0.875em;
   --font-size-2: 1em;
   --font-size-3: 1.125em;
@@ -32,6 +24,8 @@
   --font-size-5: 2.25em;
   --font-size-6: 3.25em;
   --font-size-7: 4.75em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -424,20 +418,20 @@ div.section-header {
 .teammate-name {
   font-family: var(--secondaryFont);
   font-size: var(--font-size-4);
-  line-height: 32px;
+  line-height: 1.45em;
   color: var(--accentFontColor);
-  margin: 0 0 16px 0;
+  margin: 0 0 1em 0;
 }
 
 .teammate-position {
   font-family: var(--secondaryFont);
   font-size: var(--font-size-1);
   font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 2px;
+  line-height: 1.625rem;
+  letter-spacing: 0.125em;
   text-transform: uppercase;
   color: var(--transparentFontColor);
-  margin: 0 0 35px 0;
+  margin: 0 0 2.187em 0;
 }
 
 /* Footer */
@@ -447,7 +441,7 @@ footer {
 }
 
 footer img {
-  width: 111px;
+  width: 10%;
 }
 
 footer div {
@@ -455,14 +449,14 @@ footer div {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--borderMainColor);
-  padding: 63px 0 35px 0;
+  padding: 3.9375em 0 2.1875em 0;
 }
 
 footer ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 455px;
+  width: 40%;
 }
 
 footer ul li {
@@ -472,17 +466,17 @@ footer ul li {
 footer div p {
   font-weight: 400;
   font-size: var(--font-size-2);
-  line-height: 26px;
+  line-height: 1.625em;
   color: var(--accentFontColor);
 
-  width: 369px;
+  width: 30%;
 }
 
 footer > p {
   font-style: normal;
   font-weight: 400;
   font-size: var(--font-size-2);
-  line-height: 26px;
+  line-height: 1.625em;
   color: var(--transparentFontColor);
-  margin-top: 40px;
+  margin-top: 2.5em;
 }
