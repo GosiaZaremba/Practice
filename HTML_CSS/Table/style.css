@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Ubuntu:wght@300;400;700&family=Ysabeau+SC:wght@200;300;500&display=swap");
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --main-color: #668a66;
+  --lihgt-main-color: #9fd69f;
+  --dark-main-color: #374a37;
+  --main-font-color: #000000;
+  --secondary-font-color: #ffffff;
+  --font-size-1: 1em;
+  --font-size-2: 1.125em;
+  --font-size-3: 1.375em;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.container {
+  max-width: 1440px;
+}
+h2 {
+  font-size: var(--font-size-3);
+  font-family: var(--main-font);
+
+  margin: 1em;
+}
+
+table {
+  font-family: var(--main-font);
+  text-transform: capitalize;
+
+  min-width: 30%;
+  height: 20vh;
+
+  border-collapse: collapse;
+
+  margin: 1em;
+}
+
+table thead {
+  background-color: var(--dark-main-color);
+  color: var(--secondary-font-color);
+}
+
+table thead td {
+  padding: 0.625em;
+}
+
+table td {
+  border-bottom: 1px solid var(--dark-main-color);
+}
+
+table tbody tr td {
+  padding: 0.625em;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--main-color);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--lihgt-main-color);
+}
