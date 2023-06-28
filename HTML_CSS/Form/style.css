@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Ysabeau+SC:wght@200;300;500&display=swap");
+
+:root {
+  --main-font: "Ubuntu", sans-serif;
+  --main-color: #668a66;
+  --lihgt-main-color: #9fd69f;
+  --dark-main-color: #374a37;
+  --main-font-color: #000000;
+  --secondary-font-color: #ffffff;
+  --font-size-1: 1em;
+  --font-size-2: 1.2em;
+  --font-size-3: 2em;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+h2 {
+  font-size: var(--font-size-3);
+  text-align: center;
+
+  margin: 1em;
+}
+
+.form-container {
+  margin: 2em;
+}
+
+.form-container form {
+  width: 20%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+input {
+  padding: 0.7em;
+  background-color: var(--lihgt-main-color);
+  border-radius: 5px;
+  border: none;
+}
+
+input:focus,
+input:focus-visible {
+  outline: 0.1em solid var(--dark-main-color);
+}
+
+/* Button */
+
+input[type="submit"] {
+  background-color: var(--main-color);
+  font-size: var(--font-size-2);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/* Checkbox */
+
+label.checkbox-marketing {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 5px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--main-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}

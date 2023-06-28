@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Ubuntu:wght@300;400;700&family=Ysabeau+SC:wght@200;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Ysabeau+SC:wght@200;300;500&display=swap");
 
 :root {
-  --main-font: "Roboto", sans-serif;
+  --main-font: "Ubuntu", sans-serif;
   --main-color: #668a66;
   --lihgt-main-color: #9fd69f;
   --dark-main-color: #374a37;
