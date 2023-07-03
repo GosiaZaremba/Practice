@@ -13,25 +13,28 @@
       </header>
       <section>
         <div class="form-container">
-          <form action="#" method="get" accept-charset="UTF-8" id="form1">
+          <form action="#" method="get" accept-charset="UTF-8">
             <label for="first-name">Name:</label>
-            <input type="text" name="first-name" />
+            <input type="text" name="first-name" required />
+
             <label for="last-name">Last name:</label>
-            <input type="text" name="last-name" />
+            <input type="text" name="last-name" required />
+
+            <label for="phone-number">Phone number:</label>
+            <input type="tel" name="phone-number" required />
+
             <label for="email">Your email address:</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
+
             <label for="age">Age:</label>
-            <input type="number" min="18" max="80" name="age" />
+            <input type="number" min="18" max="80" name="age" required />
+
             <label for="marketing" class="checkbox-marketing"
-              >Marketing consent: <input type="checkbox" name="marketing"
+              >Marketing consent:
+              <input type="checkbox" name="marketing" required
             /></label>
 
-            <input
-              type="submit"
-              value="Submit"
-              name="submit-button"
-              onclick="onSubmit()"
-            />
+            <input type="submit" value="Submit" name="submit-button" />
           </form>
         </div>
       </section>
