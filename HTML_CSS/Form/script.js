@@ -1,3 +1,4 @@
+// Variables
 const form = document.forms[0];
 const formInputs = Array.from(form.elements);
 
@@ -5,6 +6,8 @@ const txtRegEx = /[A-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]/gimu;
 const phoneRegEx = /[0-9]{3}-[0-9]{3}-[0-9]{3}/;
 const emailRegEx =
   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+// Callbacks
 
 function validateText(element) {
   element.type === "text" && element.value.match(txtRegEx)
@@ -37,6 +40,8 @@ function validateMarketingCheckbox(element) {
     : console.log("Wypełnij poprawnie marketing");
 }
 
+// Main functions
+
 function onSubmit(e) {
   formInputs.forEach((element) => {
     validateText(element);
@@ -48,5 +53,7 @@ function onSubmit(e) {
   e.preventDefault();
   console.log(e.target);
 }
+
+// Events
 
 form.addEventListener("submit", onSubmit);

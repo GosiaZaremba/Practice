@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+div.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+div.calculator-container {
+  width: 250px;
+  height: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+div.calculator-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #4f5958;
+  border-radius: 10px;
+  background-color: #bed8d4;
+}
+
+div.calculator-container div:hover {
+  cursor: pointer;
+  background-color: #a8bfbc;
+}
+
+div.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 220px;
+  height: 30px;
+  padding: 10px;
+
+  background-color: #bed8d4;
+
+  border: 2px solid #4f5958;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+input:first-child {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+input:nth-child(2) {
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 5px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+output {
+  width: 250px;
+  height: 50px;
+  display: block;
+}
