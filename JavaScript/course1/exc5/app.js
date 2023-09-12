@@ -59,3 +59,5 @@ class CanvasDrawing {
 }
 
 const canvasDrawing = new CanvasDrawing();
+
+// sialalalala
