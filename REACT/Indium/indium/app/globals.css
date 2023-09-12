@@ -1,0 +1,44 @@
+:root {
+  --indium-technology-red: #eb3f57;
+  --text-color-slate-gray: #67748e;
+  --text-color-dark: #252f40;
+  --text-color-white: #fff;
+  --color-black: #000;
+  --background: #f5f5fa;
+  --color-white: #fff;
+  --color-white-80: rgba(255, 255, 255, 0.8);
+  --color-input: #f5f5fa;
+  --color-border: #f0eded;
+  --indium-technology-new-gradient: linear-gradient(
+    180deg,
+    #eb3f57 0%,
+    #893944 100%
+  );
+
+  --primary-font: "Open Sans", sans-serif;
+
+  --font-size-1: 0.875em; /*14px*/
+  --font-size-2: 1em; /*16px*/
+  --font-size-3: 1.125em; /*18px*/
+  --font-size-4: 1.25em; /*20px*/
+  --font-size-5: 1.313em; /*21px*/
+  --font-size-6: 1.875em; /*30px*/
+  --font-size-7: 2.25em; /*36px*/
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}

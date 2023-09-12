@@ -1,0 +1,7 @@
+if (!this.drawing) return;
+const context = this.context;
+context.beginPath();
+context.moveTo(this.lastX, this.lastY);
+context.lineTo(e.offsetX, e.offsetY);
+context.stroke();
+[this.lastX, this.lastY] = [e.offsetX, e.OffsetY];

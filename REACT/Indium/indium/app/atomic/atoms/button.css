@@ -1,0 +1,21 @@
+button {
+  background: var(--indium-technology-new-gradient);
+  border: none;
+  border-radius: 1.25em;
+  padding: 0.75em 1em;
+  color: var(--text-color-white);
+  font-size: var(--font-size-1);
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px 0px rgba(170, 170, 204, 0.5),
+    5px 5px 10px 0px rgba(170, 170, 204, 0.25);
+  line-height: 0.75em;
+  letter-spacing: 0.035em;
+}
+
+button:hover {
+  background: var(--indium-technology-red);
+  padding: 0.563em 1.125em;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function outerFunction() {
+        let o = 1;
+        function innerFunction() {
+          let i = 5;
+          o++;
+          return { o, i };
+        }
+        return innerFunction;
+      }
+      const clo1 = outerFunction();
+      console.log(clo1());
+      console.log(clo1().i);
+    </script>
+  </body>
+</html>
